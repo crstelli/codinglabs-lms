@@ -4,6 +4,7 @@ import type { ChildrenNode } from "@/types/ChildrenNode";
 
 import { Inter } from "next/font/google";
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }: ChildrenNode) {
       <body className={`${inter.className} dark relative min-h-screen max-w-screen`}>
         <Navbar />
         <main className="h-full w-[95%] max-w-7xl py-30 mx-auto">{children}</main>
+        <Footer />
       </body>
     </html>
   );
