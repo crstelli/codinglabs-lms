@@ -8,7 +8,7 @@ import { P } from "@/components/Typography/P";
 export default function page() {
   return (
     <>
-      <div className="flex items-start justify-between mt-10">
+      <div className="max-lg:flex-col max-lg:items-center max-lg:text-center flex items-start justify-between mt-10">
         <div>
           <H1>Welcome back, Giuseppe</H1>
           <P>What are your goals for today?</P>
@@ -17,7 +17,7 @@ export default function page() {
         <StatisticsList />
       </div>
 
-      <H2 className="mt-10">Your Recent courses</H2>
+      <H2 className="max-lg:mt-20 mt-10 max-lg:text-center">Your Recent courses</H2>
       <CoursesList />
     </>
   );

@@ -2,7 +2,7 @@ import { CourseCard } from "@/components/CourseCard";
 
 function CoursesList() {
   return (
-    <div className="flex justify-between mt-2 flex-wrap gap-y-10">
+    <div className="flex justify-center mt-2 flex-wrap gap-10">
       <CourseCard />
       <CourseCard />
       <CourseCard />

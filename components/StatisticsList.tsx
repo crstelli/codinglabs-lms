@@ -10,7 +10,7 @@ import { CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsi
 
 function StatisticsList() {
   return (
-    <Collapsible>
+    <Collapsible className="max-lg:mt-10">
       <Card className="w-130">
         <CardHeader>
           <CardAction>
@@ -20,7 +20,7 @@ function StatisticsList() {
               </Button>
             </CollapsibleTrigger>
           </CardAction>
-          <CardTitle className="text-end text-xl">Your current statistics</CardTitle>
+          <CardTitle className="lg:text-end text-xl">Your current statistics</CardTitle>
         </CardHeader>
         <CollapsibleContent>
           <CardContent className="flex items-center justify-between gap-12 mt-4">
