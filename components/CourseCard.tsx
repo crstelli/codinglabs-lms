@@ -5,6 +5,8 @@ import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
+import { Book } from "lucide-react";
+import { ColorIcon } from "@/components/ColorIcon";
 
 function CourseCard() {
   return (
@@ -17,6 +19,10 @@ function CourseCard() {
         <CardDescription>
           Master typescript in this fantastic course made with 2189 instructors and lesgo
         </CardDescription>
+        <span className="flex gap-2 items-center text-muted-foreground mt-4">
+          <ColorIcon icon={Book} />
+          Lesson 21: How to bulk
+        </span>
       </CardHeader>
       <Separator className="m-0" />
       <CardContent className="grid grid-cols-2 items-center gap-4">
