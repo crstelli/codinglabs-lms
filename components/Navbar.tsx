@@ -9,7 +9,7 @@ function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="z-1 fixed left-1/2 -translate-x-1/2 grid grid-cols-[auto_1fr_auto] mt-4 w-[90%] border px-8 py-2 rounded-md">
+    <nav className="z-1 backdrop-blur-3xl bg-background/70 fixed left-1/2 -translate-x-1/2 grid grid-cols-[auto_1fr_auto] mt-4 w-[95%] max-w-350 border px-8 py-4 rounded-md">
       <div>Logo</div>
       <ul className="flex items-center justify-center gap-10">
         {NAV_LINKS.map((el) => {
