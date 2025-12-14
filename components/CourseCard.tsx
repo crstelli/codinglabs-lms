@@ -4,11 +4,14 @@ import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import Image from "next/image";
 
 function CourseCard() {
   return (
     <Card className="pt-0 border overflow-hidden">
-      <div className="aspect-video w-full bg-primary"></div>
+      <div className="aspect-video w-full relative">
+        <Image src="/placeholder.png" alt="Placeholder" fill className="object-center object-cover" />
+      </div>
       <CardHeader>
         <CardTitle>Typescript Course</CardTitle>
         <CardDescription>

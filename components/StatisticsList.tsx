@@ -1,17 +1,36 @@
+import { Card, CardAction, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+
 import { StatisticCard } from "@/components/StatisticCard";
-import { H2 } from "@/components/Typography/H2";
+
 import { STATISTICS } from "@/lib/constants";
+import { Button } from "@/components/ui/button";
+import { ChevronDown } from "lucide-react";
+import { Collapsible } from "@radix-ui/react-collapsible";
+import { CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 
 function StatisticsList() {
   return (
-    <div>
-      <H2 className="text-end">Your current statistics</H2>
-      <div className="flex items-center gap-12 mt-4">
-        {STATISTICS.map((stat) => (
-          <StatisticCard icon={stat.icon} label={stat.label} value={stat.value} key={stat.label} />
-        ))}
-      </div>
-    </div>
+    <Collapsible>
+      <Card className="w-150">
+        <CardHeader>
+          <CardAction>
+            <CollapsibleTrigger asChild>
+              <Button variant="ghost" size="icon">
+                <ChevronDown />
+              </Button>
+            </CollapsibleTrigger>
+          </CardAction>
+          <CardTitle className="text-end text-xl">Your current statistics</CardTitle>
+        </CardHeader>
+        <CollapsibleContent>
+          <CardContent className="flex items-center gap-12 mt-4">
+            {STATISTICS.map((stat) => (
+              <StatisticCard icon={stat.icon} label={stat.label} value={stat.value} key={stat.label} />
+            ))}
+          </CardContent>
+        </CollapsibleContent>
+      </Card>
+    </Collapsible>
   );
 }
 
