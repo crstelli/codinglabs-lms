@@ -6,7 +6,7 @@ function StatisticCard() {
       <span className="bg-primary/20 text-primary p-3 rounded-full">
         <Archive />
       </span>
-      <span className="text-primary text-2xl">10</span>
+      <span className="text-2xl">10</span>
       <p className="text-sm text-muted-foreground">Courses</p>
     </div>
   );
