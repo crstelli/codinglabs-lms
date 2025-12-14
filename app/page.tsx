@@ -8,10 +8,14 @@ import { P } from "@/components/Typography/P";
 export default function page() {
   return (
     <>
-      <H1>Welcome back, Giuseppe</H1>
-      <P>What are your goals for today?</P>
+      <div className="flex items-center justify-between">
+        <div>
+          <H1>Welcome back, Giuseppe</H1>
+          <P>What are your goals for today?</P>
+        </div>
 
-      <StatisticsList />
+        <StatisticsList />
+      </div>
 
       <H2 className="mt-10">Your Recent courses</H2>
       <CoursesList />
