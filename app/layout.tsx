@@ -17,7 +17,7 @@ export default function RootLayout({ children }: ChildrenNode) {
     <html lang="en">
       <body className={`${inter.className} dark relative min-h-screen max-w-screen`}>
         <Navbar />
-        <main className="h-full w-[95%] max-w-7xl pt-30 mx-auto">{children}</main>
+        <main className="h-full w-[95%] max-w-7xl py-30 mx-auto">{children}</main>
       </body>
     </html>
   );
