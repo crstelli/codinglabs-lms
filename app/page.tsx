@@ -8,7 +8,7 @@ import { P } from "@/components/Typography/P";
 export default function page() {
   return (
     <>
-      <div className="flex items-center justify-between">
+      <div className="flex items-start justify-between mt-10">
         <div>
           <H1>Welcome back, Giuseppe</H1>
           <P>What are your goals for today?</P>
