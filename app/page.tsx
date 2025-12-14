@@ -10,7 +10,11 @@ export default function page() {
       <P>What are your goals for today?</P>
 
       <H2 className="mt-10">Your Recent courses</H2>
-      <CourseCard />
+      <div className="flex justify-between mt-2">
+        <CourseCard />
+        <CourseCard />
+        <CourseCard />
+      </div>
     </>
   );
 }
