@@ -1,5 +1,5 @@
-import { H3 } from "@/components/H3";
-import { P } from "@/components/P";
+import { H3 } from "@/components/Typography/H3";
+import { P } from "@/components/Typography/P";
 
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";

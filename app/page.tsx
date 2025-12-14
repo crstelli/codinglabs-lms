@@ -1,7 +1,7 @@
 import { CourseCard } from "@/components/CourseCard";
-import { H1 } from "@/components/H1";
-import { H2 } from "@/components/H2";
-import { P } from "@/components/P";
+import { H1 } from "@/components/Typography/H1";
+import { H2 } from "@/components/Typography/H2";
+import { P } from "@/components/Typography/P";
 
 export default function page() {
   return (
