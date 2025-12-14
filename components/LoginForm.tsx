@@ -26,7 +26,9 @@ function LoginForm() {
           <Input id="password" type="password" required />
         </Field>
         <Field className="mt-2">
-          <Button type="submit">Login</Button>
+          <Button asChild>
+            <Link href="/">Login</Link>
+          </Button>
         </Field>
         <FieldSeparator className="my-2">Or continue with</FieldSeparator>
         <Field>
