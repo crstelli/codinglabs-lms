@@ -1,12 +1,14 @@
 import Link from "next/link";
+import Image from "next/image";
+
+import { ColorIcon } from "@/components/ColorIcon";
 
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import Image from "next/image";
+
 import { Book } from "lucide-react";
-import { ColorIcon } from "@/components/ColorIcon";
 
 function CourseCard() {
   return (

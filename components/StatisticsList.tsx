@@ -11,7 +11,7 @@ import { CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsi
 function StatisticsList() {
   return (
     <Collapsible>
-      <Card className="w-150">
+      <Card className="w-130">
         <CardHeader>
           <CardAction>
             <CollapsibleTrigger asChild>
@@ -23,7 +23,7 @@ function StatisticsList() {
           <CardTitle className="text-end text-xl">Your current statistics</CardTitle>
         </CardHeader>
         <CollapsibleContent>
-          <CardContent className="flex items-center gap-12 mt-4">
+          <CardContent className="flex items-center justify-between gap-12 mt-4">
             {STATISTICS.map((stat) => (
               <StatisticCard icon={stat.icon} label={stat.label} value={stat.value} key={stat.label} />
             ))}
