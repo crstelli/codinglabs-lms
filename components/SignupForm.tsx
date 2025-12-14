@@ -1,47 +1,37 @@
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
-import {
-  Field,
-  FieldDescription,
-  FieldGroup,
-  FieldLabel,
-  FieldSeparator,
-} from "@/components/ui/field"
-import { Input } from "@/components/ui/input"
+import Link from "next/link";
 
-export function LoginForm({
-  className,
-  ...props
-}: React.ComponentProps<"form">) {
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Field, FieldDescription, FieldGroup, FieldLabel, FieldSeparator } from "@/components/ui/field";
+
+function SignupForm() {
   return (
-    <form className={cn("flex flex-col gap-6", className)} {...props}>
-      <FieldGroup>
+    <form>
+      <FieldGroup className="gap-3">
         <div className="flex flex-col items-center gap-1 text-center">
-          <h1 className="text-2xl font-bold">Login to your account</h1>
-          <p className="text-muted-foreground text-sm text-balance">
-            Enter your email below to login to your account
-          </p>
+          <h1 className="text-2xl font-bold">Create a new account</h1>
+          <p className="text-muted-foreground text-sm text-balance">Enter your email below to create a new account</p>
         </div>
-        <Field>
+        <Field className="mt-3">
           <FieldLabel htmlFor="email">Email</FieldLabel>
           <Input id="email" type="email" placeholder="m@example.com" required />
         </Field>
         <Field>
           <div className="flex items-center">
             <FieldLabel htmlFor="password">Password</FieldLabel>
-            <a
-              href="#"
-              className="ml-auto text-sm underline-offset-4 hover:underline"
-            >
-              Forgot your password?
-            </a>
           </div>
           <Input id="password" type="password" required />
         </Field>
         <Field>
-          <Button type="submit">Login</Button>
+          <div className="flex items-center">
+            <FieldLabel htmlFor="password">Confirm Password</FieldLabel>
+          </div>
+          <Input id="confirmPassword" type="password" required />
         </Field>
-        <FieldSeparator>Or continue with</FieldSeparator>
+        <Field className="mt-2">
+          <Button type="submit">Signup</Button>
+        </Field>
+        <FieldSeparator className="my-2">Or continue with</FieldSeparator>
         <Field>
           <Button variant="outline" type="button">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -53,13 +43,15 @@ export function LoginForm({
             Login with GitHub
           </Button>
           <FieldDescription className="text-center">
-            Don&apos;t have an account?{" "}
-            <a href="#" className="underline underline-offset-4">
-              Sign up
-            </a>
+            Already have an account?{" "}
+            <Link href="/login" className="underline underline-offset-4">
+              Login
+            </Link>
           </FieldDescription>
         </Field>
       </FieldGroup>
     </form>
-  )
+  );
 }
+
+export { SignupForm };
