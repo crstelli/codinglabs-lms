@@ -1,5 +1,5 @@
+import { CourseLesson } from "@/components/CourseLesson";
 import { AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Checkbox } from "@/components/ui/checkbox";
 
 interface Props {
   section: string;
@@ -14,12 +14,10 @@ function CourseSection({ section }: Props) {
           <span className="flex items-center gap-2 text-muted-foreground">4/11 | 10 mins</span>
         </div>
       </AccordionTrigger>
-      <AccordionContent>
-        <div className="grid grid-cols-[auto_1fr] gap-x-4">
-          <Checkbox className="row-span-2 size-5 my-auto" />
-          <span>Lesson 1: Calories</span>
-          <span className="text-muted-foreground">4 min</span>
-        </div>
+      <AccordionContent className="flex flex-col">
+        <CourseLesson />
+        <CourseLesson />
+        <CourseLesson />
       </AccordionContent>
     </AccordionItem>
   );
