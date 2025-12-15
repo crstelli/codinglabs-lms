@@ -14,7 +14,7 @@ function CourseSection({ section }: Props) {
           <span className="flex items-center gap-2 text-muted-foreground">4/11 | 10 mins</span>
         </div>
       </AccordionTrigger>
-      <AccordionContent className="flex flex-col">
+      <AccordionContent className="flex flex-col divide-y">
         <CourseLesson />
         <CourseLesson />
         <CourseLesson />
