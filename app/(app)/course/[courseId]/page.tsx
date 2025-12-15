@@ -1,6 +1,4 @@
-import { H2 } from "@/components/Typography/H2";
 import { CourseSection } from "@/components/CourseSection";
-
 import { Accordion } from "@/components/ui/accordion";
 
 export default function page() {
@@ -9,8 +7,8 @@ export default function page() {
       <div className="bg-muted aspect-video flex">
         <span className="m-auto">Video Player</span>
       </div>
-      <div className="row-span-2 h-screen divide overflow-y-auto overflow-x-hidden py-2">
-        <H2>Course Content</H2>
+      <div className="row-span-2 h-screen divide overflow-y-auto overflow-x-hidden">
+        <h3 className="p-6 border">Course Content</h3>
         <Accordion type="multiple">
           <CourseSection section="1" />
           <CourseSection section="2" />
