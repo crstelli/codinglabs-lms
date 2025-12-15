@@ -1,9 +1,7 @@
-import { ColorIcon } from "@/components/ColorIcon";
-import { CourseSection } from "@/components/CourseSection";
 import { H2 } from "@/components/Typography/H2";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Clock } from "lucide-react";
+import { CourseSection } from "@/components/CourseSection";
+
+import { Accordion } from "@/components/ui/accordion";
 
 export default function page() {
   return (
@@ -17,6 +15,9 @@ export default function page() {
           <CourseSection section="1" />
           <CourseSection section="2" />
           <CourseSection section="3" />
+          <CourseSection section="4" />
+          <CourseSection section="5" />
+          <CourseSection section="6" />
         </Accordion>
       </div>
       <div className="text-center">Course Info</div>
