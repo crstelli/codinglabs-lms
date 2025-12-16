@@ -1,3 +1,4 @@
+import { CourseStatInfo } from "@/components/CourseStatInfo";
 import { H1 } from "@/components/Typography/H1";
 import { P } from "@/components/Typography/P";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -15,20 +16,11 @@ function CourseInfo() {
         <TabsContent value="introduction">
           <H1>How to bulk and get an aesthetic body</H1>
           <div className="flex items-center gap-6">
-            <span className="flex items-center gap-1 text-yellow-500">
-              <Star size={20} />
-              <span>4.6</span>
-            </span>
-
-            <span className="flex items-center gap-1">
-              <User size={20} />
-              <span>14.231</span>
-            </span>
-
-            <span className="flex items-center gap-1">
-              <Clock size={20} />
-              <span>10.5h</span>
-            </span>
+            <CourseStatInfo className="text-yellow-500" icon={Star}>
+              4.6
+            </CourseStatInfo>
+            <CourseStatInfo icon={User}>14.322</CourseStatInfo>
+            <CourseStatInfo icon={Clock}>9.5h</CourseStatInfo>
             <P>by Giuseppe Crescitelli</P>
           </div>
           <P className="mt-8">
