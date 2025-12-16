@@ -3,7 +3,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { TabsContent } from "@/components/ui/tabs";
-import { CircleChevronUp, CirclePlus } from "lucide-react";
+import { CircleChevronUp } from "lucide-react";
 
 function TabQuestions() {
   return (
