@@ -1,7 +1,10 @@
 import type { ChildrenString } from "@/types/ChildrenString";
+import type { ClassName } from "@/types/ClassName";
 
-function P({ children }: ChildrenString) {
-  return <p className="text-muted-foreground">{children}</p>;
+type Props = ChildrenString & ClassName;
+
+function P({ children, className }: Props) {
+  return <p className={`text-muted-foreground ${className}`}>{children}</p>;
 }
 
 export { P };
