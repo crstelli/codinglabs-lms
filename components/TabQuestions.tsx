@@ -1,7 +1,9 @@
 import { H1 } from "@/components/Typography/H1";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { TabsContent } from "@/components/ui/tabs";
+import { CircleChevronUp, CirclePlus } from "lucide-react";
 
 function TabQuestions() {
   return (
@@ -27,7 +29,12 @@ function TabQuestions() {
               <span>1 year ago</span>
             </div>
           </CardContent>
-          <CardFooter>Upvote</CardFooter>
+          <CardFooter className="flex flex-col items-end justify-between">
+            <Button size={"icon-sm"}>
+              <CircleChevronUp />
+            </Button>
+            <span>351 votes</span>
+          </CardFooter>
         </Card>
       </div>
     </TabsContent>
