@@ -6,7 +6,7 @@ import { Clock, Star, User } from "lucide-react";
 
 function CourseInfo() {
   return (
-    <div className="p-6">
+    <div className="pt-10 pb-20 px-6">
       <Tabs className="gap-6" defaultValue="introduction">
         <TabsList>
           <TabsTrigger value="introduction">Introduction</TabsTrigger>
