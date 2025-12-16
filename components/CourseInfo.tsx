@@ -31,7 +31,7 @@ function CourseInfo() {
             </span>
             <P>by Giuseppe Crescitelli</P>
           </div>
-          <P>
+          <P className="mt-8">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi quidem ipsum natus aut maxime, ducimus
             voluptates provident amet odit voluptas molestias dolor quos quia exercitationem, autem dignissimos eos
             asperiores accusantium tempore fugit commodi consequatur cumque iusto numquam. Qui nobis voluptatem quis,
