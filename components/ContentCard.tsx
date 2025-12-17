@@ -1,6 +1,9 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { getAvatarFallback } from "@/lib/utils";
+
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+
 import { CircleChevronUp } from "lucide-react";
 
 interface Props {
@@ -21,7 +24,7 @@ function ContentCard({ votes, date, user, body }: Props) {
       <CardHeader>
         <Avatar>
           <AvatarImage src={user.avatar} alt={`Avatar image of ${user.name}`} />
-          <AvatarFallback>{user.name}</AvatarFallback>
+          <AvatarFallback>{getAvatarFallback(user.name)}</AvatarFallback>
         </Avatar>
       </CardHeader>
       <CardContent className="flex flex-col px-2">
