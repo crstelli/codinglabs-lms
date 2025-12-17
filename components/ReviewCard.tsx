@@ -13,7 +13,8 @@ function ReviewCard() {
         </Avatar>
       </CardHeader>
       <CardContent className="flex flex-col px-2">
-        <CardTitle>How to use MyFitnessPal?</CardTitle>
+        <CardTitle>Best course on the platform</CardTitle>
+        <CardDescription className="mt-2">Star Rating</CardDescription>
         <CardDescription className="mt-2">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, ipsam assumenda hic similique minima quidem.
         </CardDescription>
