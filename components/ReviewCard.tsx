@@ -1,3 +1,4 @@
+import { StarRating } from "@/components/StarRating";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -14,7 +15,9 @@ function ReviewCard() {
       </CardHeader>
       <CardContent className="flex flex-col px-2">
         <CardTitle>Best course on the platform</CardTitle>
-        <CardDescription className="mt-2">Star Rating</CardDescription>
+        <CardDescription className="mt-2">
+          <StarRating rating={5} />
+        </CardDescription>
         <CardDescription className="mt-2">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, ipsam assumenda hic similique minima quidem.
         </CardDescription>
