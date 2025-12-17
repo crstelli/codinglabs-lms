@@ -1,5 +1,6 @@
 import { TabIntroduction } from "@/components/TabIntroduction";
 import { TabQuestions } from "@/components/TabQuestions";
+import { TabReviews } from "@/components/TabReviews";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 function CourseInfo() {
@@ -13,6 +14,7 @@ function CourseInfo() {
         </TabsList>
         <TabIntroduction />
         <TabQuestions />
+        <TabReviews />
       </Tabs>
     </div>
   );
