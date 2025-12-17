@@ -6,7 +6,11 @@ function TabQuestions() {
   return (
     <TabsContent value="questions">
       <H1>Questions about this course</H1>
-      <div>
+      <div className="grid grid-cols-2 gap-4">
+        <QuestionCard />
+        <QuestionCard />
+        <QuestionCard />
+        <QuestionCard />
         <QuestionCard />
       </div>
     </TabsContent>
