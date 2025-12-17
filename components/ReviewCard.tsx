@@ -15,10 +15,8 @@ function ReviewCard() {
       </CardHeader>
       <CardContent className="flex flex-col px-2">
         <CardTitle>Best course on the platform</CardTitle>
-        <CardDescription className="mt-2">
-          <StarRating rating={5} />
-        </CardDescription>
-        <CardDescription className="mt-2">
+        <StarRating className="py-2" rating={5} />
+        <CardDescription>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, ipsam assumenda hic similique minima quidem.
         </CardDescription>
 
